@@ -1,0 +1,15 @@
+<div>
+
+    <div>Showing result for {{searchText}}</div>
+   <div >
+       <div *ngFor ="let item of list | filter: searchText">
+           <div class="search-result" >
+            <p>{{item.president}}</p>
+            <p>{{item.party}}</p>
+            <p>{{item.took_office}}</p>
+           </div>
+              
+       </div>
+   </div>
+</div>
+

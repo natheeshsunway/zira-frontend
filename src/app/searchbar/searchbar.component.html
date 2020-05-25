@@ -1,11 +1,15 @@
-<div class="search-component">
+<div>
+<div class="search-component">  
   <div class="searchbox">
-
-        <input class="inputbox" type="text" placeholder="Enter to College name to calculate GPA">
-    
-  </div> 
-  
+        <input class="inputbox" type="text" placeholder="Enter to College name to calculate GPA" [(ngModel)]="searchText">      
+  </div>  
   <div class="search-icon-box"  >
-    <input class="search-icon-box-button" type="button">
+    <input class="search-icon-box-button" type="button" >
   </div>
+ 
+  
+</div>
+<div>
+  <app-search-result [searchText]="searchText"></app-search-result>
+</div>
 </div>
